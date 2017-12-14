@@ -1,0 +1,322 @@
+
+ 
+ 
+ 
+ /**	CSS RESET (http://meyerweb.com/eric/tools/css/reset/) **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {	margin: 0; 	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1;}
+ol, ul { list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+
+
+
+/** Base Body Styles **/
+body{ background-image: url(../pic/bg.png); color:#000; font:''14px 'Dosis', Arial, Helvetica, "Trebuchet MS", sans-serif;}
+h1,h2,h3,h4,h5,h6{ font-weight:bold; }
+h1{ font-size:24px;}
+h2{ font-size:20px;}
+h3{ font-size:18px;}
+h4{ font-size:14px;}
+h5{ font-size:12px;}
+h6{ font-size:10px;}
+
+a { color: #00e; text-decoration: none; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+
+a:hover, a:active { outline: 0; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+.container { width:1020px; margin: 50px auto 50px; }
+
+	
+	
+/** SIDEBAR **/
+#sidebar { height: 680px; width:250px; float: left; border-left: 5px solid #fff; background:url(../pic/sidebar-bg.png); position: relative; }
+#sidebar .logo { display:block; margin: 77px 0px 50px 28px; width: 149px; height: 49px; }
+#sidebar .main-nav > ul > li { position: relative; color: #e5e5e5; padding-left: 33px; font: bold 14px 'Dosis'; line-height: 40px; letter-spacing: 2px; }
+#sidebar .main-nav > ul { margin-left: -5px; }
+#sidebar .main-nav > ul > li a { color: #6a6a6a; display: inline-block; width: 100%; height: 100%; }
+#sidebar .main-nav > ul > li:hover,
+#sidebar .main-nav > ul > li.active { background: #111011; border-left: 5px solid #ff5b5b; border-bottom: 1px solid #212021; padding-left: 28px; }
+#sidebar .main-nav > ul > li:hover > a,
+#sidebar .main-nav > ul > li.active > a { color: #fff; } 
+
+
+
+
+
+
+
+#content { width: 760px; float: right; }
+/** CONTENT HEADER **/
+#content header { background: #f6f6f6; padding: 0px 20px; height: 80px; border-bottom: 1px solid #e3e3e3; position: relative; }
+#content header h1 { color: #7c7b7c; font: normal 28px "Dosis"; line-height: 80px; text-shadow: 1px 1px 1px #fff; } 
+/** CONTENT main **/
+#content .main{
+				width:760px;
+				height:594px;
+				background-color:#FFFFFF;
+				overflow:auto;
+				margin:5px 0;
+				}
+
+
+				
+/**SEARCHFORM**/
+#search-form { position: absolute; top: 25px; right: 20px; width: 210px; }
+#search-form  input { width: 160px; height: 32px; background: url(../pic/search-field.png); border: none; padding-left: 50px; color: #8e8b8e; font: normal 12px Arial; }
+
+.page{
+	padding-top:25%;
+}
+
+.clinic_table{
+	width:80%;	
+	margin:0 auto;
+}
+.picanddes{
+    margin-left: 3%;
+    width:95%;
+    margin-top: -15%;
+}
+.nameid{
+    margin-left: 3%;
+    width:95%;
+    margin-top: -25%;
+}
+.picanddes1{
+    margin-left: 3%;
+    width:95%;
+    margin-top: 5%;
+}
+#txtHint{
+    margin-top: -150px;
+    padding-left:50px;
+}
+
+.clinicname{
+    margin-left: 20%;
+}
+
+.hide{
+    margin-bottom: 10px;
+    margin-left: 120px;
+    width: 200px;
+    height: 40px;
+}
+
+.add{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 120px;
+}
+.pic_title_map{
+    margin-top:-100px;
+    margin-bottom: 20px;
+}
+
+.clinic_pic{
+			float:left;
+			margin-left:3%;
+}
+.clinic_intro{
+		float:left;
+		margin-left:5%;
+		color:#6E6E6E;
+        margin-bottom: 5%;
+        margin-top: -20%;
+		}
+.flblog{width:900px;height:700px;position:absolute;left:60px;top:60px;z-index:5;background:none;}
+.hideother{width:600px;height:400px;position:absolute;left:400px;top:100px;z-index:6;background:#000;
+filter:alpha(opacity=50);/*IE*/opacity:0.5;/*Mozilla*/}
+ 
+
+
+.schedulingtime{
+				clear:left;
+				margin-left:3%;
+                margin-top: 5%;
+				margin-bottom:2%;
+                width: 95%;
+}
+.schedulingtime2{
+                clear:left;
+				margin-left:3%;
+                margin-top: 5%;
+				margin-bottom:2%;
+                width: 95%;
+}
+.schedulingtime3{
+                clear:left;
+				margin-left:3%;
+                margin-top: 5%;
+				margin-bottom:2%;
+                width: 95%;
+}
+.time_table{
+    border-right:1px solid #A5A5A5; 
+    border-bottom: 1px solid #A5A5A5; 
+    margin-left:3%; 
+    width:95%; 
+    margin-bottom:20px; 
+    table-layout: fixed;
+}
+
+
+.time_table td{
+				border-left: 1px solid #a5a5a5; border-top: 1px solid #A5A5A5;
+				padding-right:30px;
+				padding: 5px;
+    		 	text-align:center;				
+			 }
+
+#table_schedule{
+				margin-left:-10%;
+}
+
+.time_table tr:nth-child(even){
+background:#4CD44F;
+}
+
+.time_table tr:nth-child(odd){
+background:#B1F297;
+}
+
+.timetable{
+    border-right:1px solid #A5A5A5; 
+    border-bottom: 1px solid #A5A5A5; 
+    margin-left:10%; 
+    margin-top: 10%;
+    width:80%; 
+    margin-bottom:20px; 
+    table-layout: fixed;
+}
+
+
+.timetable td{
+				border-left: 1px solid #a5a5a5; border-top: 1px solid #A5A5A5;
+				padding-right:30px;
+				padding: 5px;
+    		 	text-align:center;				
+			 }
+
+
+.timetable tr:nth-child(even){
+background:#4CD44F;
+}
+
+.timetable tr:nth-child(odd){
+background:#B1F297;
+}
+
+h3{
+	clear:left;
+	padding-left:10%;
+	margin-top:20px;
+	padding-bottom:0px;
+	color:#6C6C6C;
+}
+
+.page{
+	width:80%;
+	margin:15px 0;
+	background-color:#FFFFFF;
+	padding-bottom:20%;
+	}
+	
+
+.staff_info{
+    border-right:1px solid #FFDC49; 
+    border-bottom: 1px solid #FFDC49; 
+    margin-left:3%; 
+    width:95%; 
+    margin-top:0px;
+    margin-bottom:20px
+}
+
+.staff_info td{
+				border-left: 1px solid #FFDC49; border-top:#FFDC49 1px solid;
+				padding-right:30px;
+				padding: 5px;
+    		 	text-align:center;				
+}
+.staff_info tr:nth-child(even){
+background:#FFE370;
+}
+.staff_info tr:nth-child(odd){
+background:#FFF3A5;
+}
+
+.staffinformation{
+    margin-left:0%;
+    font-size:18px;
+					}
+.basicinfo{
+    clear: both;
+    margin-top: 50px;
+    color:#6E6E6E;
+    margin-left:3%;
+    padding-top:10%;
+    width: 95%;
+}
+
+iframe{
+    margin-left: 3%;
+    margin-top:10px;
+}
+
+.basictitle{
+    font-size:22px;
+    border-bottom: 1.5px solid gray;
+    height: 35px;
+    color: gray;
+}
+.basictitle a{
+    margin-left: 0;
+}
+hr { 
+    height:0px; 
+    border-top:1px solid gray; 
+    border-right:0px; 
+    border-bottom:0px; 
+    border-left:0px; 
+    margin-left: 15%;
+    margin-right: -5%;
+}
+
+.staffinformation:link{
+    font-size: 22px;
+    height: 35px;
+    color: gray;
+    margin-left: 0%;
+}
+.staffinformation:visited{
+    color: gray;
+}
+.staffinformation:hover{
+    color:#6E6E6E;
+}
+
+
+.timeaddress{
+        height: 30px;
+        vertical-align:text-bottom;
+        color: black;
+
+}
+
+.round {
+    border: 1px solid darkgrey;
+    color:dimgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+}

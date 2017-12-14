@@ -1,0 +1,205 @@
+<!doctype html>
+<head>
+<meta charset="utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Appointment Info</title>
+
+<!-- Mobile viewport optimized: h5bp.com/viewport -->
+<meta name="viewport" content="width=device-width" />
+
+
+<!-- Style Sheet-->
+<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="./css/appointment.css" />
+<!-- About Calendar-->
+<link rel='stylesheet' href='./fullcalendar/fullcalendar.css' />
+<script src='./fullcalendar/lib/jquery.min.js'></script>
+<script src='./fullcalendar/lib/moment.min.js'></script>
+<script src='./fullcalendar/fullcalendar.js'></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<!--about fancy box-->
+
+<link rel="stylesheet" type="text/css" href="./fancybox/dist/jquery.fancybox.min.css"> 
+
+<style type="text/css">
+  #addbtn{margin-left:500px; margin-top:30px; font-size:20px; float:left;background-color:#3BD9FF;color: white;border-radius: 6px;}
+</style>
+<script src='./fancybox/dist/jquery.fancybox.min.js'></script> 
+
+<script>$(document).ready(function() 
+{
+	if(document.cookie=="")
+	{
+		alert("Please login to your account");
+		window.location='./login.html';
+	}
+	else
+	{
+		var strCookie=document.cookie;
+		//将多cookie切割为多个名/值对
+		var arrCookie=strCookie.split("; ");
+		var arrCookieUserName= arrCookie[0].split("=");
+		var arrCookieUserAuthority= arrCookie[1].split("=");	
+		var UserName=arrCookieUserName[1];
+		var UserAuthority=arrCookieUserAuthority[1];
+		//alert(UserName+UserAuthority);
+		$("#name").text("Welcome  "+UserName);
+			
+	};
+// page is now ready, initialize the calendar...
+   $('#calendar').fullCalendar
+	({
+        // put your options and callbacks here
+			//调整header部分的样式	
+			header:
+			{
+				left:'today,prev,next',
+				center:'title',
+				right:'month,agendaWeek,agendaDay,listMonth'
+			},
+			//高度
+			height: 500,
+			
+			//把不应该存在的日期给去掉
+			showNonCurrentDates:false,
+			//根据周数决定有几行
+			fixedWeekCount:false,
+			//决定日历的长宽比
+			 //aspectRatio: 2,
+			 //决定每个日期能显示的最多的活动数
+			 eventLimit:true,
+			 
+			 
+			 //决定点击以后发生的事件
+			 
+			 //将agenda页面里面所有最上方的allday给去掉
+			 allDaySlot:false,
+			 //在agenda页面里面事件会不会互相重叠
+			 slotEventOverlap:true,
+			 
+			 
+			 //决定在week视角日期是不是可以点，如果可以点将会将用户导航到相应的日期
+			 navLinks:true,
+			
+			
+			//点在日期上以后发生的事情
+			//dayClick: function(date, jsEvent, view)
+			// { 
+					
+       		//},
+			//关于日期的数据源 
+			events:'./php/eventsource.php',
+			//关于event的样式
+			eventColor:'Aquamarine',
+			eventTextColor:'blue',
+			eventBorderColor:'blue',
+			//点击在事件以后发生的事情
+			eventClick: function(calEvent, jsEvent, view) {
+
+															 $.fancybox.open([
+																					{
+																					  src  : './php/editpage.php?action=add&id='+calEvent.id,
+																					  type : 'ajax',
+																					  opts : {
+																						
+																							}
+																					}
+																			])
+															
+														},
+			
+			
+	})
+	$("#addbtn").click(function(){
+				//alert("123");
+				 $.fancybox.open([
+									{
+									  src  : './php/addpage.php',
+									  type : 'ajax',
+									  opts : {
+										
+											}
+									}
+							])
+	});
+	if(UserAuthority=="staff" || UserAuthority=="manager" || UserAuthority=="owner")
+	{
+		$("#addbtn").show();
+	}
+	if(UserAuthority=="doctor")
+	{
+		$("#addbtn").hide();
+	}
+});
+</script>
+				
+</head>
+		<body >
+<!--		<a href="timg.jpg" data-fancybox data-caption="My caption">
+123
+</a>		-->	
+			
+			
+			<div class="container">
+			
+				<!--SIDEBAR-->
+				<aside id="sidebar">
+				
+					<!--logo-->
+					<p id="name" style="color:white;font-size:20px;margin-left:40px;margin-top:60px;"></p>
+					<a href="homepage.html" class="logo"><img src="pic/logo2.png" alt="logo" /></a>
+					
+					<!--main-menu-->
+					<nav class="main-nav">
+						<ul>
+							<li><a href="homepage.html">Homepage</a></li>
+							<li><a href="clinicinfohomepage.php">Clinic Info</a></li>
+							<li><a href="petview.php?page=1">Pet Info</a></li>
+							<li><a href="petowner.php">Petowner Info</a></li>
+							<li class="active"><a href="appointmentinfo.html">Appointment Info</a></li>
+							<li><a href="treatmentinfo.php?page=1">Treatment Info</a></li>
+							<li><a href="treatmentrecord.php">Treatment Record</a></li>
+							<li><a href="staffinfo.php">Staff Info</a></li>
+						</ul>
+					</nav>
+				</aside>
+				<!--CONTENT-->
+				<section id="content">
+					
+						<!--header-->
+						<header>
+						
+								
+								<h1>Appointment information</h1>
+								<form id="search-form" method="post"action="./php/search.php" />
+										
+										<input type="text" name="keyword" placeholder="Search here" value="" />
+								</form>
+						</header>
+						
+						<!--main-->
+						<div class="main" style="background-color:white">
+							
+								<div id="calendar">
+									
+								</div>
+								<div id="editinfo">
+								
+								<button id="addbtn">add new appointment</button>
+								</div>
+								
+
+
+						</div>
+					
+				</section>
+			
+			</div>
+							
+
+</body>
+</html>

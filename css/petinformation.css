@@ -1,0 +1,172 @@
+.submit{
+    padding-left: 75%;
+}
+
+.price{
+    margin-left: 70%
+}
+
+.nextpage {
+    margin-left: 62%;
+
+}
+
+.nextpage1 {
+    margin-left: 79%;
+    margin-right: 3%
+
+}
+
+.datanumber1 {
+    margin-left: 84%;
+
+}
+
+.submit1 {
+    margin-left: 90%;
+
+}
+
+.edit2{
+    padding-left: 76%;
+}
+.box{
+    width:auto;
+    color:white;
+    padding:5px
+}
+.submit1 {
+    margin-left: 50%;
+    border-width: 10px;
+}
+
+.submit2 {
+    margin-left: 60%;
+    border-width: 10px;
+}
+
+.submit3 {
+    margin-left: 88%;
+    border-width: 10px;
+    margin-top:2%
+}
+.city {
+   float: left;
+   margin: 10px;
+   max-width: 100%;
+   padding: 10px;
+   height: 100%;
+}   
+
+.round {
+    border: 1px solid darkgrey;
+    color:dimgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+}
+
+
+
+.try
+{
+background-color:white;color:black;margin: 40px;padding:15px;
+}
+
+.button {
+    border: 2px solid darkgrey;
+    color:black;
+    font-size: 12pt;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.city1 {
+   float: left;
+   margin: 2px;
+   max-width: 250px;
+   padding: 2px;
+   height: 100%;
+   background-color:white;
+   margin: 40px;
+   margin-right: 10px;
+   padding:15px;
+}     
+
+.city2 {
+   float:left;
+max-width: 100%;
+   height: 100%;
+    background-color: white;
+   margin: 40px;
+   margin-left: 10px;
+   margin-right: 0px;
+   padding:15px;
+}   
+
+.city3 {
+   float: left;
+   margin: 2px;
+   max-width: 315px;
+   padding: 2px;
+   height: 100%;
+   background-color:white;
+   margin: 40px;
+   margin-left: 20px;
+   margin-right: 0px;
+   padding:15px;
+}    
+
+.city4 {
+   float: left;
+   margin: 2px;
+   max-width: 600px;
+   padding: 2px;
+   height: 100%;
+   background-color:white;
+   margin: 40px;
+   margin-left: 20px;
+   margin-right: 10px;
+   padding:15px;
+}    
+
+.city5 {
+   float: left;
+   margin: 2px;
+   max-width: 100%;
+   padding: 2px;
+   height: 100%;
+   background-color:white;
+   margin: 40px;
+   margin-left: 20px;
+   margin-right: 0px;
+   padding:15px;
+}    
+
+.city6 {
+   float: left;
+   margin: 2px;
+   max-width: 380px;
+   padding: 2px;
+   height: 100%;
+   background-color:white;
+   margin: 40px;
+   margin-right: 10px;
+   padding:15px;
+}    
+
+.city7 {
+   float: left;
+   margin: 2px;
+   max-width: 100%;
+   padding: 2px;
+   height: 100%;
+   background-color:white;
+   margin: 40px;
+   margin-left: 30px;
+   margin-right: 20px;
+   padding:15px;
+} 

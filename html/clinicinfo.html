@@ -1,0 +1,217 @@
+<!doctype html>
+		<head>
+				<meta charset="utf-8" />
+				
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				
+				<title>Clinic Information</title>
+				
+				<!-- Mobile viewport optimized: h5bp.com/viewport -->
+				<meta name="viewport" content="width=device-width" />
+				
+				
+				<!-- Style Sheet-->
+				<link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet" type="text/css" />
+				<link rel="stylesheet" type="text/css" href="css/clinicinfo.css" />		
+		</head>
+		<body>				
+			
+			<div class="container">
+			
+				<!--SIDEBAR-->
+				<aside id="sidebar">
+				
+					<!--logo-->
+					<a href="#" class="logo"><img src="pic/logo2.png" alt="logo" /></a>
+					
+					<!--main-menu-->
+					<nav class="main-nav">
+						<ul>
+							<li><a href="homepage.html">Homepage</a></li>
+							<li class="active"><a href="clinicinfohomepage.html">Clinic Info</a></li>
+							<li><a href="petinfo.html">Pet Info</a></li>
+							<li><a href="supplierinfo.html">Supplier Info</a></li>
+							<li><a href="petowner.html">Petowner Info</a></li>
+							<li><a href="appointmentinfo.html">Appointment Info</a></li>
+							<li><a href="storageinfo.html">Storage Info</a></li>
+							<li><a href="treatmentinfo.html">Treatment Info</a></li>
+							<li><a href="treatmentrecord.html">Treatment Record</a></li>
+							<li><a href="staffinfo.php">Staff Info</a></li>
+							<li><a href="transactioninfo.html">Transaction Info</a></li>
+						</ul>
+					</nav>
+				</aside>
+				<!--CONTENT-->
+				<section id="content">
+					
+						<!--header-->
+						<header>
+						
+								
+								<h1>Clinic Information</h1>
+								<form id="search-form" method="post" >
+										
+										<input type="text" placeholder="Search Here" />
+								</form>
+						</header>
+						<!--main-->
+						<div class="main">
+						<div class="page">
+						<div class="pic_title_map">
+						<img class="clinic_pic" src="pic/northern_clinic.jpg" width="160" height="160"/>
+    					<table class="clinic_intro" width="300">
+    					<tr>
+        				<td>Eastern Vet Clinic</td>
+        				</tr>
+        				<tr>
+        				<td height="50">This is northern vet clinic, which was built in 2016....</td>
+        				</tr>
+        				<tr>
+        				<td height="50">Opening hours: &nbsp;8am-6pm, Monday to Friday</td>
+        				</tr>
+        				<tr>
+        				<td height="50"><a onclick="popfldiv();" href="#" class="clickthis">Address:</a>&nbsp; 12 Northern Street Brisbane, Australia</td>
+         				</tr>
+						</table>
+						<div class="flblog" id="fldiv" style="display:none;" >
+<div class="hideother"></div>
+<div class="showthis"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14159.623326786908!2d153.0331903!3d-27.4721909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1a96b38957%3A0x2b8d6ecb3918ce7d!2sAlice+St%2C+Brisbane+City+QLD+4000!5e0!3m2!1sen!2sau!4v1502333381894" width="200" height="200" frameborder="0" style="border:0" allowfullscreen class="flframe"></iframe></div>
+<a onclick="popfldiv();" href="#" class="popback">Exit</a>
+</div>
+</div>
+<table class="schedulingtime">
+<tr>
+<td>
+<h3 id="table_schedule">Scheduling time</h3></td>
+<td><img class="edit" src="pic/edit.png" width="20" height="20"/>
+</td></tr>
+</table>
+<table border="0" align="left" cellpadding="0" cellspacing="0" class="time_table">
+	<tr>
+    	<td ></td>
+        <td>Monday</td>
+        <td>Tuesday</td>
+        <td>Wednesday</td>
+        <td>Thursday</td>
+        <td>Friday</td>
+        </tr>
+        <tr>
+        <td>Day shift</td>
+        <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select>
+         </td>
+        <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        </tr>
+        <tr>
+        	<td>Night shift</td>
+            <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+       		 <td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        	<td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        	<td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+        	<td><select name="doc_name">
+    		<option value="1">Peter Parker</option>
+    		<option value="2">Tony Stark</option>
+   			<option value="3">Clark Kent</option>
+    		<option value="4">Steve Rogers</option>
+			</select></td>
+            </tr>
+            </table>
+            <br>
+            <h3>Performance Income</h3>            
+            <img class="incomeperformance" src="pic/table.png">           
+            <div class="staffinfo">
+            <a class="staffinformation" href="Staffinfo.html">Staff information</a>
+            <br>
+            <table border="0" align="left" cellpadding="0" cellspacing="0" class="staff_info">
+            	<tr>
+                	<td>ID</td>
+                    <td>Name</td>
+                    <td>Phone</td>
+                    <td>E-mail</td>
+                    <td>Working Time</td>
+                 </tr>
+                 <tr>
+                 	<td>M001</td>
+                    <td>Hugh Jackman</td>
+                    <td>0414896325</td>
+                    <td>hugh.jackman@gmail.com</td>
+                    <td>Monday-Friday</td>
+                  </tr>
+                  <tr>
+                  	<td>D001</td>
+                    <td>Peter Parker</td>
+					<td>0451456985</td>
+                    <td>peter.parker@gmail.com</td>
+                    <td>Tuesday-Saturday</td>
+                   </tr>
+                   <tr>
+                  	<td>D002</td>
+                    <td>Tony Stark</td>
+					<td>0454126879</td>
+                    <td>tony.stark@gmail.com</td>
+                    <td>Wednesday-Saturday</td>
+                   </tr>
+				</table>
+			</div>
+       </div>
+						</div>
+					
+				</section>
+			
+			</div>
+<script type="text/javascript">
+function popfldiv(){
+document.getElementById('fldiv').style.display=(document.getElementById('fldiv').style.display=='none')?'block':'none';// feilong.org/onclick-a-link-popout-div
+}
+</script>							
+
+</body>
+</html>
